@@ -1,0 +1,34 @@
+h1 {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+h2 {
+    color: blueviolet;
+    font-style: italic;
+}
+
+h3 {
+    color: red;
+}
+
+#titre {
+    color: cyan;
+}
+
+.titres {
+    color: brown !important;
+    text-decoration: underline;
+}
+
+
+
+
+/* 
+
+
+balise
+class
+id
+style="" 
+ */
