@@ -5,14 +5,31 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <!-- Les titres -->
-        <h1 id="titre" class="titres">Bienvenu sur mon site</h1>
-        <h2 class="titres">Bienvenu sur mon site</h2>
-        <h3 class="titres">Bienvenu sur mon site</h3>
-        <h4 class="titres">Bienvenu sur mon site</h4>
-        <h5 class="titres">Bienvenu sur mon site</h5>
-        <h6 class="titres">Bienvenu sur mon site</h6>
+        <h1>Ma liste</h1>
+    
+        <form id="form" action="">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
 
-        <a href="page2.html">Aller a la page 2</a>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <button type="submit">Ajouter</button>
+        </form>
+
+        <table>
+            <thead>
+                <th>Nom</th>
+                <th>Telephone</th>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
