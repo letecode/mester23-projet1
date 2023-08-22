@@ -9,8 +9,9 @@ form.addEventListener('submit', function(event){
     let data = new FormData(event.target)
 
     let user = {
+        'id' : contacts.length + 1,
         'name' : data.get('name'),
-        'phone' : data.get('phone')
+        'phone' : data.get('phone'),
     };
 
     contacts.push(user);
@@ -22,12 +23,19 @@ form.addEventListener('submit', function(event){
 function afficher(){
     tbody.innerHTML = ''
 
-    for(user of contacts) {
+    for(let i=0;i < contacts.length;i++) {
         let temp = `<tr>
-            <td>${user.name}</td>
-            <td>${user.phone}</td>
+            <td>${contacts[i].name}</td>
+            <td>${contacts[i].phone}</td>
+            <td><button type="button" onclick="supprimer(${i})">Supprimer</button></td>
         </tr>`
 
         tbody.innerHTML = tbody.innerHTML + temp
     }
+}
+
+function supprimer(index) {
+    contacts.splice(index, 1);
+
+    afficher()
 }
